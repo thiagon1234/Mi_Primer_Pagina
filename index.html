@@ -3,27 +3,26 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Puesto El Buen Sabor</title>
+  <title>Puesto "LA FAMILIA"</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
-    <h1>Puesto El Buen Sabor</h1>
+    <h1>Puesto "LA FAMILIA"</h1>
     <p>Bienvenido a nuestro catálogo online</p>
   </header>
 
   <section id="catalogo">
     <h2>Catálogo</h2>
-    <ul>
-      <li>Empanadas</li>
-      <li>Pizza</li>
-      <li>Hamburguesas</li>
-    </ul>
-    <button onclick="mostrarPrecios()">Mostrar precios</button>
-    <div id="precios" style="display:none;">
-      <p>Empanadas: $100</p>
-      <p>Pizza: $250</p>
-      <p>Hamburguesas: $200</p>
+    <button id="btnVerCatalogo">Ver catálogo</button>
+    <div id="menuCatalogo" style="display:none; margin-top: 15px;">
+      <button class="categoria-btn" data-categoria="frutas">Frutas</button>
+      <button class="categoria-btn" data-categoria="verduras">Verduras</button>
+      <button class="categoria-btn" data-categoria="otros">Otros</button>
+    </div>
+
+    <div id="contenidoCatalogo" style="margin-top: 20px;">
+      <!-- Aquí se mostrarán las imágenes y precios -->
     </div>
   </section>
 
@@ -37,9 +36,9 @@
   </section>
 
   <section id="dueños">
-    <h2>Sobre Nosotros</h2>
-    <p>Somos Thiago, Valentina y Matías, un equipo dedicado a dar lo mejor en cada comida.</p>
-  </section>
+  <h2>Sobre Nosotros</h2>
+  <p>Somos Brian Nuñez y Lucia Juarez</p>
+</section>
 
   <section id="pedido">
     <h2>Realizar un Pedido</h2>
