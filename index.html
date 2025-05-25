@@ -32,29 +32,29 @@
     <div id="menuOfertas" style="display:none; margin-top: 15px;"></div>
   </section>
 
-  <section id="carrito">
-    <h2>Carrito</h2>
-    <ul id="listaCarrito"></ul>
-    <p><strong>Total:</strong> $<span id="totalCarrito">0</span></p>
+  <section id="dueños">
+    <h2>Sobre Nosotros</h2>
+    <p>Somos Brian Nuñez y Lucia Juarez</p>
   </section>
 
   <section id="pedido">
     <h2>Realizar un Pedido</h2>
     <form onsubmit="return mostrarResumen()" method="POST">
       <label>Nombre:</label>
-      <input type="text" name="nombre" required><br>
+      <input type="text" name="nombre" required /><br />
       <label>Dirección:</label>
-      <input type="text" name="direccion" required><br>
+      <input type="text" name="direccion" required /><br />
       <label>Teléfono:</label>
-      <input type="tel" name="telefono" required><br>
+      <input type="tel" name="telefono" required /><br />
       <div id="resumenPedido" style="margin: 10px 0;"></div>
       <button type="submit">Enviar Pedido</button>
     </form>
   </section>
 
-  <section id="dueños">
-    <h2>Sobre Nosotros</h2>
-    <p>Somos Brian Nuñez y Lucia Juarez</p>
+  <section id="carrito">
+    <h2>Carrito</h2>
+    <ul id="listaCarrito"></ul>
+    <p><strong>Total:</strong> $<span id="totalCarrito">0</span></p>
   </section>
 
   <script src="script.js"></script>

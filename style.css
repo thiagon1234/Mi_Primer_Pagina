@@ -50,17 +50,24 @@ input[type="number"] {
   box-sizing: border-box;
 }
 
+#contenidoCatalogo div,
+#menuOfertas div {
+  margin-bottom: 20px;
+}
+
 #contenidoCatalogo img,
 #menuOfertas img {
   max-width: 200px;
   border-radius: 10px;
   margin-bottom: 10px;
+  display: block;
 }
 
 #contenidoCatalogo p,
 #menuOfertas p {
   font-weight: bold;
   font-size: 1.1em;
+  margin: 5px 0;
 }
 
 #carrito ul {
