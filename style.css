@@ -41,7 +41,7 @@ button:hover {
 
 input[type="text"],
 input[type="tel"],
-select {
+input[type="number"] {
   padding: 10px;
   width: 100%;
   margin: 5px 0 15px 0;
@@ -50,40 +50,20 @@ select {
   box-sizing: border-box;
 }
 
-#contenidoCatalogo img {
+#contenidoCatalogo img,
+#menuOfertas img {
   max-width: 200px;
   border-radius: 10px;
   margin-bottom: 10px;
 }
 
-#contenidoCatalogo p {
+#contenidoCatalogo p,
+#menuOfertas p {
   font-weight: bold;
   font-size: 1.1em;
 }
 
-.itemProducto {
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  padding: 10px;
-  margin-bottom: 15px;
-  text-align: center;
-  display: inline-block;
-  width: 180px;
-  margin-right: 15px;
-  vertical-align: top;
-}
-
-.itemProducto img {
-  max-width: 150px;
-  border-radius: 8px;
-}
-
-.itemProducto button {
-  margin-top: 8px;
-  width: 100%;
-}
-
-#itemsCarrito .itemCarrito {
-  border-bottom: 1px solid #ccc;
-  padding: 5px 0;
+#carrito ul {
+  list-style: none;
+  padding: 0;
 }

@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Puesto "LA FAMILIA"</title>
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -23,54 +23,38 @@
       <option value="otros">Otros</option>
     </select>
 
-    <div id="contenidoCatalogo" style="margin-top: 20px;">
-      <!-- Aquí se mostrarán las imágenes y precios -->
-    </div>
-  </section>
-
-  <section id="carrito">
-    <h2>Carrito de Compras</h2>
-    <div id="itemsCarrito">
-      <p>El carrito está vacío.</p>
-    </div>
-    <p><strong>Total: $<span id="totalCarrito">0</span></strong></p>
-    <button id="vaciarCarrito">Vaciar Carrito</button>
+    <div id="contenidoCatalogo" style="margin-top: 20px;"></div>
   </section>
 
   <section id="ofertas">
     <h2>Ofertas</h2>
     <button onclick="mostrarOfertas()">Ver menú de ofertas</button>
-    <div id="menuOfertas" style="display:none;">
-      <p>Combo 1: 2 Empanadas + Refresco - $180</p>
-      <p>Combo 2: Hamburguesa + Papas - $250</p>
-    </div>
+    <div id="menuOfertas" style="display:none; margin-top: 15px;"></div>
   </section>
 
-  <section id="dueños">
-    <h2>Sobre Nosotros</h2>
-    <p>Somos Brian Nuñez y Lucia Juarez</p>
+  <section id="carrito">
+    <h2>Carrito</h2>
+    <ul id="listaCarrito"></ul>
+    <p><strong>Total:</strong> $<span id="totalCarrito">0</span></p>
   </section>
 
   <section id="pedido">
     <h2>Realizar un Pedido</h2>
-    <form id="formPedido" action="https://formspree.io/f/tu_form_id" method="POST">
+    <form onsubmit="return mostrarResumen()" method="POST">
       <label>Nombre:</label>
       <input type="text" name="nombre" required><br>
       <label>Dirección:</label>
       <input type="text" name="direccion" required><br>
       <label>Teléfono:</label>
       <input type="tel" name="telefono" required><br>
-
-      <div id="resumenPedido" style="background:#eee; padding:10px; margin:10px 0; border-radius:6px;">
-        <h3>Resumen del Pedido:</h3>
-        <div id="detallePedido">No hay productos en el carrito.</div>
-        <p><strong>Total: $<span id="totalPedido">0</span></strong></p>
-      </div>
-
-      <input type="hidden" name="detallePedidoTexto" id="detallePedidoTexto" value="">
-
+      <div id="resumenPedido" style="margin: 10px 0;"></div>
       <button type="submit">Enviar Pedido</button>
     </form>
+  </section>
+
+  <section id="dueños">
+    <h2>Sobre Nosotros</h2>
+    <p>Somos Brian Nuñez y Lucia Juarez</p>
   </section>
 
   <script src="script.js"></script>
