@@ -1,13 +1,13 @@
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: pink;
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjUzaQFEHbrDLsIA3R_5UiuxSbigE80rZBgw&s);
   padding: 20px;
   margin: 0;
   color: black;
 }
 
 header {
-  background-color: gray;
+  background-color: pink;
   color: white;
   padding: 30px 20px;
   text-align: center;
