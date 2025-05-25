@@ -40,29 +40,14 @@ button:hover {
 }
 
 input[type="text"],
-input[type="tel"] {
+input[type="tel"],
+select {
   padding: 10px;
   width: 100%;
   margin: 5px 0 15px 0;
   border: 1px solid #ccc;
   border-radius: 6px;
   box-sizing: border-box;
-}
-
-/* Catálogo */
-.categoria-btn {
-  padding: 8px 15px;
-  margin-right: 10px;
-  background-color: #28a745;
-  color: white;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.categoria-btn:hover {
-  background-color: #19692c;
 }
 
 #contenidoCatalogo img {
@@ -74,4 +59,31 @@ input[type="tel"] {
 #contenidoCatalogo p {
   font-weight: bold;
   font-size: 1.1em;
+}
+
+.itemProducto {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 15px;
+  text-align: center;
+  display: inline-block;
+  width: 180px;
+  margin-right: 15px;
+  vertical-align: top;
+}
+
+.itemProducto img {
+  max-width: 150px;
+  border-radius: 8px;
+}
+
+.itemProducto button {
+  margin-top: 8px;
+  width: 100%;
+}
+
+#itemsCarrito .itemCarrito {
+  border-bottom: 1px solid #ccc;
+  padding: 5px 0;
 }

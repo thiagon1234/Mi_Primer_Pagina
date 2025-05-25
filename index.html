@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Puesto "LA FAMILIA"</title>
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -15,15 +15,26 @@
   <section id="catalogo">
     <h2>Catálogo</h2>
     <button id="btnVerCatalogo">Ver catálogo</button>
-    <div id="menuCatalogo" style="display:none; margin-top: 15px;">
-      <button class="categoria-btn" data-categoria="frutas">Frutas</button>
-      <button class="categoria-btn" data-categoria="verduras">Verduras</button>
-      <button class="categoria-btn" data-categoria="otros">Otros</button>
-    </div>
+
+    <select id="selectCategoria" style="display:none; margin-top: 15px;">
+      <option value="">Seleccioná una categoría</option>
+      <option value="frutas">Frutas</option>
+      <option value="verduras">Verduras</option>
+      <option value="otros">Otros</option>
+    </select>
 
     <div id="contenidoCatalogo" style="margin-top: 20px;">
       <!-- Aquí se mostrarán las imágenes y precios -->
     </div>
+  </section>
+
+  <section id="carrito">
+    <h2>Carrito de Compras</h2>
+    <div id="itemsCarrito">
+      <p>El carrito está vacío.</p>
+    </div>
+    <p><strong>Total: $<span id="totalCarrito">0</span></strong></p>
+    <button id="vaciarCarrito">Vaciar Carrito</button>
   </section>
 
   <section id="ofertas">
@@ -36,19 +47,28 @@
   </section>
 
   <section id="dueños">
-  <h2>Sobre Nosotros</h2>
-  <p>Somos Brian Nuñez y Lucia Juarez</p>
-</section>
+    <h2>Sobre Nosotros</h2>
+    <p>Somos Brian Nuñez y Lucia Juarez</p>
+  </section>
 
   <section id="pedido">
     <h2>Realizar un Pedido</h2>
-    <form action="https://formspree.io/f/tu_form_id" method="POST">
+    <form id="formPedido" action="https://formspree.io/f/tu_form_id" method="POST">
       <label>Nombre:</label>
       <input type="text" name="nombre" required><br>
       <label>Dirección:</label>
       <input type="text" name="direccion" required><br>
       <label>Teléfono:</label>
       <input type="tel" name="telefono" required><br>
+
+      <div id="resumenPedido" style="background:#eee; padding:10px; margin:10px 0; border-radius:6px;">
+        <h3>Resumen del Pedido:</h3>
+        <div id="detallePedido">No hay productos en el carrito.</div>
+        <p><strong>Total: $<span id="totalPedido">0</span></strong></p>
+      </div>
+
+      <input type="hidden" name="detallePedidoTexto" id="detallePedidoTexto" value="">
+
       <button type="submit">Enviar Pedido</button>
     </form>
   </section>
