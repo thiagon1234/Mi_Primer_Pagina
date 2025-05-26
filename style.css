@@ -7,12 +7,7 @@ body {
 }
 
 header {
-   background-color: 
- #af601a 
-RGB
- 175, 96, 26 
-HSL
- 28, 74%, 39%;
+   background-color: rgb(158, 113, 55);
   color: black;
   padding: 30px 20px;
   text-align: center;
@@ -42,6 +37,7 @@ button {
 
 button:hover {
   background-color: white;
+  color: black;  /* texto negro para que se vea sobre blanco */
 }
 
 input[type="text"],
