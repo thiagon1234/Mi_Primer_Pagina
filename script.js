@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', function () {
       verduras: [
         { nombre: 'Papa', precio: 20, imagen: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgPzsnoRsnCNht9RBvr3WdHqz1H7FFCRjozw&s' },
         { nombre: 'Boniato', precio: 25, imagen: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIQnfCez0qmp3OH02bUr7Ch-pJ16A2OZpYjQ&s' },
-        { nombre: 'Zapallo', precio: 30, imagen: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.eldorado.com.uy%2Fzapallo-kabutia-kg-0877%2Fp&psig=AOvVaw3NJvfg0CZ6B0jzTyTL4bFT&ust=1748293360349000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCODmkbPCv40DFQAAAAAdAAAAABAE' },
+        { nombre: 'Zapallo', precio: 30, imagen: 'https://eldoradouy.vtexassets.com/arquivos/ids/1161324-800-auto?v=638452598541670000&width=800&height=auto&aspect=true' },
         { nombre: 'Tomate', precio: 35, imagen: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Bright_red_tomato_and_cross_section02.jpg/960px-Bright_red_tomato_and_cross_section02.jpg' },
         { nombre: 'Morrón', precio: 40, imagen: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlGSfmKo0NiaGzxnM3k_rpu2v_gpFhPNuP1w&s' },
         { nombre: 'Ajo', precio: 50, imagen: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQi2CYMxQmm6Z7m6S_8vK8uDhL1tK5_qam6HA&s' },
