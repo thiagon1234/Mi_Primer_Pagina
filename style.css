@@ -1,10 +1,21 @@
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Open Sans', sans-serif;
   background-image: url(fondo13.jpeg);
   padding: 20px;
   margin: 0;
   color: black;
 }
+
+header, section, button, input, #contenidoCatalogo p, #menuOfertas p {
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* Para los títulos (header y otros que quieras), usar Dancing Script */
+header h1, header h2, /* o cualquier selector de títulos */
+section h1, section h2 {
+  font-family: 'Dancing Script', cursive;
+}
+
 
 header {
    background-color: rgb(158, 113, 55);
@@ -119,3 +130,4 @@ input[type="number"] {
   margin: 8px 0;
   color: #4a4a4a;
 }
+
